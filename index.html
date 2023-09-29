@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/19bc6c091e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <i class="fa-solid fa-angle-left" style="color: #00dbeb"></i>
+        <i class="fa-solid fa-bars" style="color: #00dbeb"></i>
+      </nav>
+
+      <img
+        src="https://images.unsplash.com/photo-1583707225463-5f14f64afe6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNxYXVyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+      />
+      <h1>Stereo</h1>
+      <p>Unknown Artist</p>
+      <audio  class="song">
+        <source src="audio.mp3" type="audio/mpeg" />
+      </audio>
+      <input type="range" value="0" class="progress" />
+
+      <div class="controls">
+        <i class="fa-solid fa-backward " style="color: #00dbeb" id="backward-button"></i>
+        <i class="fa-solid fa-play ctrl" style="color: #00dbeb" onclick="playPause()"></i>
+        <i class="fa-solid fa-rotate-left replay" style="color: #00dbeb"></i>
+        <i class="fa-solid fa-forward" style="color: #00dbeb" id="forward-button"></i>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
